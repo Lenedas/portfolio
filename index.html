@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+
+  <nav id="navbar">
+    <div class="nav-logo">PORTFOLIO de Léonidas Chateau-Nosakhare</div>
+    <div class="nav-buttons">
+      <button class="nav-btn active" data-page="accueil">Accueil</button>
+      <button class="nav-btn" data-page="experience">Expérience</button>
+      <button class="nav-btn" data-page="formation">Formation</button>
+      <button class="nav-btn" data-page="veille">Veille Tech</button>
+      <button class="nav-btn" data-page="loisirs">Loisirs</button>
+      <button class="nav-btn" data-page="projets">Projets</button>
+      <button class="nav-btn" data-page="apropos">À propos</button>
+    </div>
+  </nav>
+
+  <!-- PAGES CONTAINER -->
+
+  <main id="main-content">
+
+```
+<!-- PAGE 1 : ACCUEIL -->
+<section id="page-accueil" class="page active">
+  <div class="card card-split image-right">
+    <div class="card-text">
+      <p class="card-eyebrow">Bienvenue sur mon portfolio</p>
+      <h1 class="card-title">Léonidas<br/><span class="accent">Chateau-Nosakhare</span></h1>
+      <p class="card-subtitle">étudiant de première année · Votre domaine</p>
+      <p class="card-body">
+        Courte présentation de vous-même ici. Parlez de votre passion, de votre parcours 
+        ou de ce qui vous définit en quelques phrases percutantes. Ce texte est entièrement 
+        modifiable dans le fichier <code>index.html</code>.
+      </p>
+      <div class="card-tags">
+        <span class="tag">Technologie</span>
+        <span class="tag">Innovation</span>
+        <span class="tag">Créativité</span>
+      </div>
+    </div>
+    <div class="card-image">
+      <!--
+        PHOTO DE PROFIL
+        Remplacez src="" par le chemin de votre image.
+        Ex: src="images/photo.jpg"
+      -->
+      <div class="img-placeholder">
+        <span>📷</span>
+        <p>mettre photo ici</p>
+        <small>Modifiez src="" dans le HTML</small>
+      </div>
+      <!-- <img src="" alt="Photo de profil" /> -->
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 2 : EXPÉRIENCE PROFESSIONNELLE -->
+<section id="page-experience" class="page">
+  <div class="card card-full">
+    <p class="card-eyebrow">Parcours</p>
+    <h2 class="card-title">Expérience <span class="accent">Professionnelle</span></h2>
+    <div class="timeline">
+
+      <!--
+        ==============================
+        AJOUTEZ VOS EXPÉRIENCES ICI
+        Dupliquez un bloc .timeline-item pour ajouter une entrée
+        ==============================
+      -->
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Titre du poste</h3>
+            <span class="timeline-date">2023 – Présent</span>
+          </div>
+          <p class="timeline-company">🏢 Nom de l'entreprise · Ville</p>
+          <p class="timeline-desc">
+            Description de vos missions et responsabilités. Mentionnez les technologies 
+            utilisées, les projets menés, les compétences développées.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag small">Compétence 1</span>
+            <span class="tag small">Compétence 2</span>
+            <span class="tag small">Compétence 3</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Titre du poste</h3>
+            <span class="timeline-date">2021 – 2023</span>
+          </div>
+          <p class="timeline-company">🏢 Nom de l'entreprise · Ville</p>
+          <p class="timeline-desc">
+            Description de vos missions. Ajoutez autant de blocs que nécessaire 
+            en dupliquant ce .timeline-item.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag small">Compétence A</span>
+            <span class="tag small">Compétence B</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Stage / Alternance</h3>
+            <span class="timeline-date">2020 – 2021</span>
+          </div>
+          <p class="timeline-company">🏢 Entreprise · Ville</p>
+          <p class="timeline-desc">
+            Décrivez votre stage ou alternance ici.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 3 : FORMATION -->
+<section id="page-formation" class="page">
+  <div class="card card-split image-left">
+    <div class="card-image">
+      <!--
+        IMAGE FORMATION (côté gauche)
+        Remplacez src="" par le chemin de votre image.
+        Ex: src="images/diplome.jpg"
+      -->
+      <div class="img-placeholder">
+        <span>🎓</span>
+        <p>Illustration formation</p>
+        <small>Modifiez src="" dans le HTML</small>
+      </div>
+      <!-- <img src="" alt="Formation" /> -->
+    </div>
+    <div class="card-text">
+      <p class="card-eyebrow">Études</p>
+      <h2 class="card-title">Établissements <span class="accent">Scolaires</span></h2>
+      <div class="edu-list">
+
+        <!--
+          ==============================
+          AJOUTEZ VOS DIPLÔMES ICI
+          ==============================
+        -->
+
+        <div class="edu-item">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h3>Titre du diplôme / BTS / Licence</h3>
+            <p class="edu-school">Nom de l'établissement · Ville</p>
+            <p class="edu-years">2021 – 2023</p>
+            <p class="edu-desc">Brève description de la formation, spécialisation, mention.</p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-icon">📚</div>
+          <div class="edu-info">
+            <h3>Baccalauréat / CAP / autre</h3>
+            <p class="edu-school">Lycée / École · Ville</p>
+            <p class="edu-years">2018 – 2021</p>
+            <p class="edu-desc">Filière, spécialités, mention éventuelle.</p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-icon">🏫</div>
+          <div class="edu-info">
+            <h3>Formation complémentaire</h3>
+            <p class="edu-school">Organisme · En ligne / Présentiel</p>
+            <p class="edu-years">2023</p>
+            <p class="edu-desc">Certification, MOOC, formation courte...</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 4 : VEILLE TECHNOLOGIQUE – DLSS -->
+<section id="page-veille" class="page">
+  <div class="card card-split image-right">
+    <div class="card-text">
+      <p class="card-eyebrow">Veille Technologique</p>
+      <h2 class="card-title">Le <span class="accent">DLSS</span></h2>
+      <p class="card-body">
+        Le <strong>DLSS</strong> (Deep Learning Super Sampling) est une technologie développée 
+        par NVIDIA qui utilise l'intelligence artificielle et les réseaux de neurones pour 
+        augmenter la résolution des images en temps réel dans les jeux vidéo.
+      </p>
+      <div class="veille-blocks">
+        <div class="veille-block">
+          <h4>🤖 Comment ça fonctionne ?</h4>
+          <p>
+            Le DLSS s'appuie sur des Tensor Cores présents dans les GPU NVIDIA RTX. 
+            Un réseau de neurones entraîné sur des milliers d'images en haute résolution 
+            reconstruit les détails manquants à partir d'une image rendue à faible résolution, 
+            permettant des gains de performance significatifs sans perte visuelle perceptible.
+          </p>
+        </div>
+        <div class="veille-block">
+          <h4>📈 Versions & évolutions</h4>
+          <p>
+            DLSS 1.0 (2018) · DLSS 2.0 (2020, révolutionnaire) · DLSS 3.0 (2022, Frame Generation) 
+            · DLSS 3.5 (2023, Ray Reconstruction). Chaque version apporte une qualité d'image 
+            et des performances améliorées.
+          </p>
+        </div>
+        <div class="veille-block">
+          <h4>🔭 Pourquoi cette veille ?</h4>
+          <p>
+            <!-- Personnalisez cette section avec votre motivation personnelle -->
+            Passionné par l'intersection entre IA et jeux vidéo, le DLSS représente 
+            pour moi un exemple concret d'IA appliquée au quotidien. Suivre son évolution 
+            permet de comprendre les tendances de l'IA générative appliquée au rendu graphique.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card-image">
+      <!--
+        IMAGE DLSS (côté droit)
+        Ex: src="images/dlss.jpg"
+      -->
+      <div class="img-placeholder">
+        <span>🖥️</span>
+        <p>Image DLSS / NVIDIA</p>
+        <small>Modifiez src="" dans le HTML</small>
+      </div>
+      <!-- <img src="" alt="DLSS NVIDIA" /> -->
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 5 : LOISIRS -->
+<section id="page-loisirs" class="page">
+  <div class="card card-split image-left">
+    <div class="card-image">
+      <!--
+        IMAGE LOISIRS (côté gauche)
+        Ex: src="images/loisirs.jpg"
+      -->
+      <div class="img-placeholder">
+        <span>🎮</span>
+        <p>Photo de loisir</p>
+        <small>Modifiez src="" dans le HTML</small>
+      </div>
+      <!-- <img src="" alt="Mes loisirs" /> -->
+    </div>
+    <div class="card-text">
+      <p class="card-eyebrow">Temps libre</p>
+      <h2 class="card-title">Mes <span class="accent">Loisirs</span></h2>
+      <div class="hobbies-grid">
+
+        <!--
+          ==============================
+          AJOUTEZ / MODIFIEZ VOS LOISIRS
+          ==============================
+        -->
+
+        <div class="hobby-card">
+          <span class="hobby-icon">🎮</span>
+          <h4>Jeux vidéo</h4>
+          <p>Description de votre passion pour les jeux vidéo.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">📷</span>
+          <h4>Photographie</h4>
+          <p>Ce que vous aimez photographier, votre style...</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">🎵</span>
+          <h4>Musique</h4>
+          <p>Instruments pratiqués, genres écoutés...</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">⚽</span>
+          <h4>Sport</h4>
+          <p>Sports pratiqués, niveau, fréquence...</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">📖</span>
+          <h4>Lecture</h4>
+          <p>Genres littéraires préférés, auteurs favoris...</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">✈️</span>
+          <h4>Voyages</h4>
+          <p>Destinations visitées, coups de cœur...</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 6 : PROJETS -->
+<section id="page-projets" class="page">
+  <div class="card card-split image-right">
+    <div class="card-text">
+      <p class="card-eyebrow">Réalisations</p>
+      <h2 class="card-title">Mes <span class="accent">Projets</span></h2>
+      <div class="projects-list">
+
+        <!--
+          ==============================
+          AJOUTEZ VOS PROJETS ICI
+          ==============================
+        -->
+
+        <div class="project-item">
+          <div class="project-num">01</div>
+          <div class="project-info">
+            <h3>Nom du projet</h3>
+            <p>Description du projet : objectif, technologies utilisées, résultat obtenu. 
+               Lien vers GitHub ou démo si disponible.</p>
+            <div class="timeline-tags">
+              <span class="tag small">HTML</span>
+              <span class="tag small">CSS</span>
+              <span class="tag small">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-num">02</div>
+          <div class="project-info">
+            <h3>Deuxième projet</h3>
+            <p>Description du projet. Contexte scolaire ou personnel, durée, équipe ou solo.</p>
+            <div class="timeline-tags">
+              <span class="tag small">Python</span>
+              <span class="tag small">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-num">03</div>
+          <div class="project-info">
+            <h3>Troisième projet</h3>
+            <p>Un projet personnel, une application, un jeu, un site web...</p>
+            <div class="timeline-tags">
+              <span class="tag small">React</span>
+              <span class="tag small">Node.js</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="card-image">
+      <!--
+        IMAGE PROJETS (côté droit)
+        Ex: src="images/projets.jpg"
+      -->
+      <div class="img-placeholder">
+        <span>💻</span>
+        <p>Screenshot de projet</p>
+        <small>Modifiez src="" dans le HTML</small>
+      </div>
+      <!-- <img src="" alt="Mes projets" /> -->
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 7 : À PROPOS -->
+<section id="page-apropos" class="page">
+  <div class="card card-split image-left">
+    <div class="card-image">
+      <!--
+        IMAGE À PROPOS (côté gauche)
+        Ex: src="images/apropos.jpg"
+      -->
+      <div class="img-placeholder">
+        <span>🙋</span>
+        <p>Une photo de vous</p>
+        <small>Modifiez src="" dans le HTML</small>
+      </div>
+      <!-- <img src="" alt="À propos de moi" /> -->
+    </div>
+    <div class="card-text">
+      <p class="card-eyebrow">Qui suis-je ?</p>
+      <h2 class="card-title">À <span class="accent">Propos</span></h2>
+      <p class="card-body">
+        <!-- Parlez librement de vous ici -->
+        Ici, parlez de votre personnalité, vos valeurs, ce qui vous anime au quotidien. 
+        Soyez authentique et humain — c'est ce que les recruteurs apprécient le plus.
+      </p>
+      <p class="card-body">
+        Vous pouvez mentionner votre origine, votre vision du métier, vos ambitions, 
+        ce qui vous différencie des autres candidats ou encore comment vous travaillez 
+        en équipe.
+      </p>
+      <div class="about-facts">
+        <div class="fact">
+          <span class="fact-value">📍</span>
+          <span class="fact-label">Votre Ville, France</span>
+        </div>
+        <div class="fact">
+          <span class="fact-value">💼</span>
+          <span class="fact-label">Disponible / En poste</span>
+        </div>
+        <div class="fact">
+          <span class="fact-value">🌐</span>
+          <span class="fact-label">votre@email.com</span>
+        </div>
+        <div class="fact">
+          <span class="fact-value">🔗</span>
+          <span class="fact-label">linkedin.com/in/votrenom</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
