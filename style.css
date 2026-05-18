@@ -1,16 +1,15 @@
 /* ===================================================
    PORTFOLIO – style.css
-   Thème : bleu très foncé + cadrans bleu clair
    =================================================== */
 
 /* ── Variables ── */
 :root {
-  --bg:          #040d1a;        /* arrière-plan bleu très foncé */
-  --card-bg:     #0e2a4a;        /* cadran bleu moyen-foncé      */
-  --card-border: #1a4a7a;        /* bordure légère               */
-  --card-glow:   #1a6abf;        /* lueur bleue claire           */
-  --accent:      #4db8ff;        /* bleu clair accent            */
-  --accent2:     #7dd3fc;        /* bleu encore plus clair       */
+  --bg:          #040d1a;        
+  --card-bg:     #0e2a4a;        
+  --card-border: #1a4a7a;        
+  --card-glow:   #1a6abf;       
+  --accent:      #4db8ff;        
+  --accent2:     #7dd3fc;        
   --text-main:   #e8f4fd;        /* texte principal blanc-bleu   */
   --text-muted:  #8ab4d4;        /* texte secondaire             */
   --tag-bg:      rgba(77,184,255,.15);
@@ -22,7 +21,7 @@
   --transition:   0.45s cubic-bezier(.4,0,.2,1);
 }
 
-/* ── Reset ── */
+/*Reset*/
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
@@ -34,7 +33,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ── Fond étoilé / texture ── */
+
 body::before {
   content: '';
   position: fixed;
@@ -164,7 +163,7 @@ body::before {
   to   { opacity:1; transform: scale(1)  translateY(0); }
 }
 
-/* Ligne lumineuse en haut de la carte */
+/*ligne lumineuse en haut de la carte*/
 .card::before {
   content: '';
   display: block;
@@ -175,7 +174,7 @@ body::before {
   opacity: .7;
 }
 
-/* ── Variantes de layout ── */
+/*Variantes layout*/
 .card-full {
   display: block;
 }
@@ -191,7 +190,7 @@ body::before {
 .card-split.image-right { direction: rtl; }
 .card-split.image-right > * { direction: ltr; }
 
-/* ── Zone image ── */
+/*Zone image */
 .card-image {
   width: 100%;
   aspect-ratio: 4/3;
@@ -229,7 +228,7 @@ body::before {
 .img-placeholder p    { font-size: .95rem; font-weight: 500; }
 .img-placeholder small { font-size: .75rem; opacity: .65; font-family: monospace; }
 
-/* ── Typographie des cartes ── */
+/* Typographie des carte */
 .card-eyebrow {
   font-size: .75rem;
   font-weight: 500;
@@ -264,7 +263,7 @@ body::before {
 
 .accent { color: var(--accent); }
 
-/* ── Tags ── */
+/*  Tags  */
 .card-tags {
   display: flex;
   flex-wrap: wrap;

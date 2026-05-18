@@ -100,10 +100,10 @@ sans rechargement de la page
     initFromHash();
     });
     
-    // ── Initialisation ────────────────────────────────
+    //  Initialisation 
     initFromHash();
     
-    // ── Animation d’entrée progressive des cards ─────
+    // Animation d’entrée progressive des cards 
     // Réapplique l’animation à chaque changement de page
     const observer = new MutationObserver((mutations) => {
     mutations.forEach(mutation => {
